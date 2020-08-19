@@ -1,0 +1,340 @@
+
+.tab-servicios {
+	position: relative;
+	display: inline;
+	margin-left: -57px;
+}
+
+.tab-ser-primero {
+	position: relative;
+	display: inline;
+}
+
+.tab-ser-primero a {
+	margin-left: 0px!important;
+	padding-right: 50px;
+	position: relative;
+	width: 274px;
+	height: 40px;
+	display: block;
+	background-image: url('../images/contacto/tab-ele-prim.png');
+	background-position: center;
+	color: #666666;
+	text-decoration: none;
+	font-size: 19px;
+	padding-top: 5px;
+	text-align: left;
+	font-weight: bold;
+	transition: none;
+}
+
+
+.tab-servicios a {
+	padding-right: 50px;
+	position: relative;
+	width: 274px;
+	height: 40px;
+	display: block;
+	background-image: url('../images/contacto/tab-ele.png');
+	background-position: center;
+	color: #666666;
+	text-decoration: none;
+	font-size: 19px;
+	padding-top: 5px;
+	text-align: left;
+	font-weight: bold;
+	transition: none;
+
+}
+.tab-servicios a.active {
+	background-position: top;
+	color: #ffffff;
+}
+
+.tab-ser-primero a.active {
+	background-position: top;
+	color: #ffffff;
+}
+.tab-servicios a:hover {
+	background-position: bottom;
+	color: #ffffff;
+}
+
+.tab-servicios .active, .tab-ser-primero .active{
+	background-position: top!important;
+	pointer-events: none;
+	cursor: default;
+}
+
+.tab-ser-primero a:hover {
+	background-position: bottom;
+	color: #ffffff;
+}
+
+.tab-servicios {
+	display: inline-block;
+}
+
+
+/*MODIFICADOS PARA DOS LINEAS*/
+
+.tab-servicios-guber {
+	position: relative;
+	display: inline;
+	margin-left: -57px;
+}
+
+.tab-ser-primero-guber {
+	position: relative;
+	display: inline;
+}
+
+.tab-ser-primero-guber a {
+	margin-left: 0px!important;
+	padding-right: 50px;
+	position: relative;
+	width: 274px;
+	height: 58px;
+	display: block;
+	background-image: url('../images/contacto/large.png');
+	background-position: center;
+	line-height: 1.2;
+	color: #666666;
+	text-decoration: none;
+	font-size: 19px;
+	padding-top: 5px;
+	text-align: left;
+	font-weight: bold;
+	transition: none;
+}
+
+
+.tab-servicios-guber a {
+	padding-right: 50px;
+	position: relative;
+	width: 274px;
+	height: 58px;
+	display: block;
+	background-image: url('../images/contacto/large.png');
+	background-position: center;
+	color: #666666;
+	text-decoration: none;
+	line-height: 1.2;
+	font-size: 19px;
+	padding-top: 5px;
+	text-align: left;
+	font-weight: bold;
+	transition: none;
+
+}
+.tab-servicios-guber a.active {
+	background-position: top;
+	color: #ffffff;
+}
+
+.tab-ser-primero-guber a.active {
+	background-position: top;
+	color: #ffffff;
+}
+.tab-servicios-guber a:hover {
+	background-position: bottom;
+	color: #ffffff;
+}
+
+.tab-servicios-guber .active, .tab-ser-primero-guber .active{
+	background-position: top!important;
+	pointer-events: none;
+	cursor: default;
+}
+
+.tab-ser-primero-guber a:hover {
+	background-position: bottom;
+	color: #ffffff;
+}
+
+.tab-servicios-guber {
+	display: inline-block;
+}
+
+/*Tab de mayor tamaño*/
+
+.tab-servicios-large {
+	position: relative;
+	display: inline;
+	margin-left: -100px;
+}
+
+.tab-ser-primero-large {
+	position: relative;
+	display: inline;
+}
+
+.tab-ser-primero-large a {
+	margin-left: 0px!important;
+	padding-right: 30px;
+	position: relative;
+	width: 400px;
+	height: 40px;
+	display: block;
+	background-image: url('../images/contacto/large-400.png');
+	background-position: top;
+	color: #666666;
+	text-decoration: none;
+	font-size: 19px;
+	padding-top: 5px;
+	text-align: left;
+	font-weight: bold;
+	transition: none;
+}
+
+
+.tab-servicios-large a {
+	position: relative;
+	width: 445px;
+	height: 40px;
+	display: block;
+	background-image: url('../images/contacto/large-400-2.png');
+	background-position: top;
+	color: #666666;
+	text-decoration: none;
+	font-size: 19px;
+	padding-top: 5px;
+	text-align: left;
+	font-weight: bold;
+	transition: none;
+
+
+}
+.tab-servicios-large a.active {
+	background-position: bottom;
+	color: #ffffff;
+}
+
+.tab-ser-primero-large a.active {
+	background-position: bottom;
+	color: #ffffff;
+}
+.tab-servicios-large a:hover {
+	background-position: center;
+	color: #ffffff;
+}
+
+.tab-servicios-large .active, .tab-ser-primero-large .active{
+	background-position: bottom!important;
+	pointer-events: none;
+	cursor: default;
+}
+
+.tab-ser-primero-large a:hover {
+	background-position: center;
+	color: #ffffff;
+}
+
+.tab-servicios-large {
+	display: inline-block;
+}
+
+.col-6-modificada {
+	width: 50%;
+	padding-right: 15px;
+	padding-left: 15px;
+	display: fle;
+}
+
+.ul-text-servicios {
+	display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.div-linea {
+	margin-left: 15px;
+	border-left: 1px solid #B3B3B3;
+	position: relative;
+}
+
+.div-linea-final {
+	margin-left: 15px;
+	position: relative;
+}
+
+.div-texto {
+	margin-left: 25px;
+}
+
+.img-flecha {
+	position: absolute;
+	width: 30px;
+	left: -15px;
+	background: #ffffff;
+	height: 30px;
+}
+
+.img-flecha-1 {
+	position: absolute;
+	width: 30px;
+	left: -15px;
+	height: 30px;
+	padding-top: 4px;
+}
+
+.img-circulo {
+	position: absolute;
+	width: 10px;
+	left: -5px;
+	bottom: -5px;
+	/*height: 15px;	*/
+}
+
+.border-final {
+	position: absolute;
+	width: 1px;
+	height: 18px;
+	top: 0px;
+	border-left: 1px solid #B3B3B3;
+}
+
+.border-inicial {
+	position: absolute;
+	width: 1px;
+	height: 5px;
+	left: -1px;
+	top: 0;
+	border-left: 1px solid #ffffff;
+}
+
+.li-tap {
+	color: #2a7dd1;
+}
+
+.li-tap:hover {
+	color: #011849!important;
+
+}
+
+.li-tap:focus{
+	color: #2a7dd1;
+}
+
+.img-flechita-1 {
+	position: relative;
+	display: block;
+	background-image: url('../images/soluciones/desglose/FLECHITA-2.png');
+	background-position: top;
+	text-decoration: none;
+	width: 30px;
+	height: 30px;
+}
+
+.li-tap.active {
+	pointer-events: none;
+	color: #011849!important;
+}
+
+.li-tap.active .img-flecha-1 .img-flechita-1{
+	background-position: bottom;
+}

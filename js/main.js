@@ -215,7 +215,7 @@ $(".lis-nfor").on("click", function(){
     }
 
 });
-$(window).scroll(function() {
+/*$(window).scroll(function() {
     var sPath = window.location.pathname;
     var sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
     if (sPage == "nosotros.html") {
@@ -232,7 +232,7 @@ $(window).scroll(function() {
         $('.responsa_link').removeClass('active');
       }
     }
-});
+});*/
 
     
     

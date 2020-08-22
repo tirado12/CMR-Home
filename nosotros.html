@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
     <!-- Magnific-popup -->
     <link rel="stylesheet" href="css/magnific-popup.css">
     <style type="text/css">
@@ -332,15 +333,17 @@
       </section>
 
       <!--Seccion UC&CS-->
-      <section class="section-md-75 section-lg-100 sec2 ">
+      <section class="section-md-75 section-lg-100 sec2 " id="seccion-quines-somos">
         <div class="container padding-top-50">
           <div class="row" style="">
             <div class="col-sm-12 col-md-6 col-lg-6 div-img-sobre-nosotros">
               <div class="div-grafica">
-                <div class="img-mountan">
-                  
-                </div>
                 <div>
+                  <div class="mountan">
+                    <div class="div-animar-grafica">
+                      
+                    </div>
+                  </div>
                   <div class="grafica-2">
                     <div class="text-grafica">
                       <div class="texto-grafica">
@@ -543,28 +546,6 @@
         </div>
       </section>
 
-      <!--Seccion Infraestructura-->
-      <!--<section class="section-md-75 section-lg-100 sec2 color-back-blue-logos padding-bottom-0-1">
-        <div class="container padding-top-50 padding-botton-50">
-            <div class="row">
-
-              <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 font-size-14px text-center-vertical-1-1 justify-content-center-1">
-                <p class="text-white roboto-400 f-s-17 t-j-767 text-des-sli">
-                  Nuestra infraestructura se basa en cuatro áreas fundamentales de especialización. <strong>Consultoría 
-                  Gubernamental, Auditoria e Impuestos, infraestructura y defensa legal de servidores públicos.</strong>
-                </p>
-
-              </div> 
-               <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 font-size-14px text-center-vertical-1-1 p-b-30-991">
-                <span class="etiqueta-servicios color-white text-center-vertical-1-mo p-t-40-991 text-justify">
-                  <a class="button button-responsive button-medium button-primary-outline-v2 roboto-400 f-s-17 text-center-vertical-1" href="contacto.html">Enviar Email</a>
-                </span>
-
-              </div> 
-            </div>
-        </div>
-      </section>-->
-
       <section class="back-gris-f2">
         <div class="container">
           <div class="row">
@@ -585,26 +566,6 @@
             </div>
           </div>
         </div>  
-        <!--<div class="swiper-container swiper-slider swiper-variant-1 bg-black" data-loop="false" data-autoplay="true" data-simulate-touch="false">
-          <div class="swiper-wrapper text-center">
-            <div class="swiper-slide nosotros-img" data-slide-bg="images/nosotros/portada.png">
-              <div class="swiper-slide-caption text-center">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-11 col-lg-11 col-xl-11">
-                      
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>           
-          </div>
-          <div class="swiper-scrollbar d-lg-none"></div>
-          <div class="swiper-nav-wrap">
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-          </div>
-        </div>-->
       </section>
 
       <!--Seccion UC&CS-->
@@ -627,7 +588,7 @@
                   <h2 class="f-s-30 text-white  text-center line-height-1-1 margin-bottom-10-1">
                     <span class="roboto-700">Nuestro alcance global</span>
                   </h2>
-                  <div class="margin-top-0px padding-botton-30">
+                  <div class="margin-top-0px">
                     <hr class="hr-gris hr-azul margin-top-0px width-350 ">
                   </div>
                 </div>
@@ -648,12 +609,14 @@
         <div class="div-50-alcance-2">
           
         </div>
-        <div class="container padding-top-50 padding-bottom-50">
+        <div class="container padding-top-50 padding-bottom-50 p-relative">
+                    
           <div class="row fila-alcance-global">
             <div class="col-md-6 col-lg-6 div-titulo-nag">
             </div>
             <div class="col-md-6 col-lg-6">
               <div class="fila-texto-enlace">
+                
                 
 
                 <p class="f-gris-66 roboto-400 f-s-17 text-justify primer-parrafo-uccs margin-top-0px">
@@ -701,9 +664,9 @@
 
 
       <!--Seccion colaboradores-->
-      <section class="section-50 section-md-75 section-lg-100 back-white padding-bottom-50" id="colaboradores_id">
-        <div class="container padding-botton-30">
-          <h2 class="f-s-30 color-font-azul-2 padding-top-30  text-center line-height-1-1 margin-bottom-10-1">
+      <section class="section-50 section-md-75 section-lg-100 back-white padding-bottom-50 padding-top-50" id="colaboradores_id">
+        <div class="container padding-botton-15">
+          <h2 class="f-s-30 color-font-azul-2  text-center line-height-1-1 margin-bottom-10-1">
             <span class="roboto-700">¿Qué nos diferencia? Nuestra gente.</span>
           </h2>
           <div class="margin-top-0px">
@@ -719,50 +682,6 @@
             <div class="">
               <div class="owl-carousel owl-spacing-1 owl-nav-classic owl-style-minimal slider-colaborador2" data-autoplay="false" data-items="1" data-md-items="2" data-stage-padding="0" data-loop="true" data-mouse-drag="true" data-nav="true" data-dots="true" data-dots-each="1">
                 <div class="item img-colab">
-                  <!--<div class="row">
-                    <div class="col-lg-3 col-md-4 centar-img-colaborador">
-                      <div class="course margin-bottom-10">
-                        <div class="course-img img-colaborador border-gris-col margin-bottom-10">
-                          <img src="images/galeria/3.png" class="" alt="">
-                        </div>                
-                      </div>  
-                    </div>
-                    
-                    <div class="col-lg-9 col-md-8 margin-top-20 texto-colaborador">
-
-                      <p class="texto-izquierda">
-
-                        <span class="roboto-400 f-gris-66 f-s-25">
-                          Cecilio Martínez
-                        </span>
-                        <br>
-                        <br>
-                        <span class="roboto-400 f-gris-66 f-s-17">
-                          Infraestructura Pública
-                        </span>
-                      </p>
-
-                      <p class="text-justify texto-colaborador">                      
-                        <span class="roboto-400 f-gris-66 f-s-17 text-justify">
-                          Ingeniero líder del departamento de infraestructura pública. Gestiona y coordina las diferentes áreas profesionales para la realización de obra pública, desde la gestión hasta la entrega de obra terminada. Ha llevado la supervisión de obra en más de 20 municipios del estado de Oaxaca, logrando el éxito y la confianza de los servidores públicos.
-                        </span>
-                      </p>
-                      <ul class="list-inline list-inline-reset padding-botton-30 texto-colaborador">
-                        <li class="padding-right-5 padding-left-5">
-                          <a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-phone b-gris-cc" href="tel:951 205 17 04"></a>
-                        </li>
-                        <li class="padding-right-5 padding-left-5">
-                          <a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-whatsapp b-gris-cc" href="https://api.whatsapp.com/send?phone=5219516561556" target="_black"></a>
-                        </li>
-                        <li class="padding-right-5 padding-left-5">
-                          <a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-envelope b-gris-cc" href="mailto:contacto@mrcorporativo.com"></a>
-                        </li>
-                        <li class="padding-right-5 padding-left-5">
-                          <a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-linkedin b-gris-cc" href="https://www.linkedin.com/" target="_black"></a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>-->
                   <div class="colaboradores-nosotros">
                     <div class="course margin-bottom-10" style="display: flex; justify-content: center;">
                       <div class="course-img img-colaborador border-gris-col-1 margin-bottom-10" style="max-width: 150px;">
@@ -795,10 +714,10 @@
                             <a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-whatsapp" href="https://api.whatsapp.com/send?phone=5219516561556" target="_black"></a>
                           </li>
                           <li class="padding-right-5 padding-left-5">
-                            <a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-envelope" href="mailto:contacto@mrcorporativo.com"></a>
+                            <a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-envelope" href="mailto:marcelo.mtz@mrcorporativo.com"></a>
                           </li>
                           <li class="padding-right-5 padding-left-5">
-                            <a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-linkedin" href="https://www.linkedin.com/" target="_black"></a>
+                            <a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-linkedin" href="https://www.linkedin.com/in/marcelo-martinez-chavez-17bb481b/" target="_black"></a>
                           </li>
                         </ul>
                       </div>
@@ -806,51 +725,8 @@
                     </div> 
                   </div>
                 </div>
+              
                 <div class="item img-colab">
-                  <!--<div class="row">
-                    <div class="col-lg-3 col-md-4 centar-img-colaborador">
-                      <div class="course margin-bottom-10">
-                        <div class="course-img img-colaborador border-gris-col margin-bottom-10">
-                          <img src="images/galeria/3.png" class="" alt="">
-                        </div>                
-                      </div>  
-                    </div>
-                    
-                    <div class="col-lg-9 col-md-8 margin-top-20 texto-colaborador">
-
-                      <p class="texto-izquierda">
-
-                        <span class="roboto-400 f-gris-66 f-s-25">
-                          Cecilio Martínez
-                        </span>
-                        <br>
-                        <br>
-                        <span class="roboto-400 f-gris-66 f-s-17">
-                          Infraestructura Pública
-                        </span>
-                      </p>
-
-                      <p class="text-justify texto-colaborador">                      
-                        <span class="roboto-400 f-gris-66 f-s-17 text-justify">
-                          Ingeniero líder del departamento de infraestructura pública. Gestiona y coordina las diferentes áreas profesionales para la realización de obra pública, desde la gestión hasta la entrega de obra terminada. Ha llevado la supervisión de obra en más de 20 municipios del estado de Oaxaca, logrando el éxito y la confianza de los servidores públicos.
-                        </span>
-                      </p>
-                      <ul class="list-inline list-inline-reset padding-botton-30 texto-colaborador">
-                        <li class="padding-right-5 padding-left-5">
-                          <a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-phone b-gris-cc" href="tel:951 205 17 04"></a>
-                        </li>
-                        <li class="padding-right-5 padding-left-5">
-                          <a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-whatsapp b-gris-cc" href="https://api.whatsapp.com/send?phone=5219516561556" target="_black"></a>
-                        </li>
-                        <li class="padding-right-5 padding-left-5">
-                          <a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-envelope b-gris-cc" href="mailto:contacto@mrcorporativo.com"></a>
-                        </li>
-                        <li class="padding-right-5 padding-left-5">
-                          <a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-linkedin b-gris-cc" href="https://www.linkedin.com/" target="_black"></a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>-->
                   <div class="colaboradores-nosotros">
                     <div class="course margin-bottom-10" style="display: flex; justify-content: center;">
                       <div class="course-img img-colaborador border-gris-col-1 margin-bottom-10" style="max-width: 150px;">
@@ -866,7 +742,7 @@
                           </span>
                           <br>
                           <span class="roboto-400 f-gris-66 f-s-17">
-                            Socia fundadora
+                            Socia Fundadora
                           </span>
                         </p>
 
@@ -883,10 +759,325 @@
                             <a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-whatsapp" href="https://api.whatsapp.com/send?phone=5219516561556" target="_black"></a>
                           </li>
                           <li class="padding-right-5 padding-left-5">
-                            <a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-envelope" href="mailto:contacto@mrcorporativo.com"></a>
+                            <a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-envelope" href="mailto:yesenia.rmz@mrcorporativo.com"></a>
                           </li>
                           <li class="padding-right-5 padding-left-5">
-                            <a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-linkedin" href="https://www.linkedin.com/" target="_black"></a>
+                            <a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-linkedin" href="https://www.linkedin.com/in/yesenia-ramirez-lopez-b7a57184/" target="_black"></a>
+                          </li>
+                        </ul>
+                      </div>
+                      
+                    </div> 
+                  </div>
+                </div>
+
+                <div class="item img-colab">
+                  <div class="colaboradores-nosotros">
+                    <div class="course margin-bottom-10" style="display: flex; justify-content: center;">
+                      <div class="course-img img-colaborador border-gris-col-1 margin-bottom-10" style="max-width: 150px;">
+                        <img src="images/galeria/julio-ramirez.png" class="" alt="">
+                      </div>                
+                    </div>
+                    <div class="texto-perfil">
+                      <div>
+                        <p class="text-center colaborador-nombre">
+
+                          <span class="roboto-700 f-gris-66 f-s-21">
+                            Julio Ramírez
+                          </span>
+                          <br>
+                          <span class="roboto-400 f-gris-66 f-s-17 line-height-1-1">
+                            Consultoría Gubernamental
+                          </span>
+                        </p>
+
+                        <p class="text-center texto-colaborador">
+                          <span class="roboto-400 f-gris-66 f-s-14 text-justify">
+                             Contador Público con más de 8 años de experiencia en nuestra firma. Coordinador del área de Contabilidad Municipal. Especializado en la aplicación práctica de la Ley General de Contabilidad y el cumplimiento de obligaciones financieras municipales.
+                          </span>
+                        </p>
+                        <ul class="list-inline list-inline-reset texto-colaborador div-social-colaborador">
+                          <li class="padding-right-5 padding-left-5">
+                            <a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-phone" href="tel:951 205 17 04"></a>
+                          </li>
+                          <li class="padding-right-5 padding-left-5">
+                            <a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-whatsapp" href="https://api.whatsapp.com/send?phone=5219516561556" target="_black"></a>
+                          </li>
+                          <li class="padding-right-5 padding-left-5">
+                            <a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-envelope" href="mailto:julio.rmz@mrcorporativo.com"></a>
+                          </li>
+                          <li class="padding-right-5 padding-left-5">
+                            <a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-linkedin" href="https://www.linkedin.com/in/julio-c%C3%A9sar-ramirez-cruz-08bb1316b/" target="_black"></a>
+                          </li>
+                        </ul>
+                      </div>
+                      
+                    </div> 
+                  </div>
+                </div>
+
+                <div class="item img-colab">
+                  <div class="colaboradores-nosotros">
+                    <div class="course margin-bottom-10" style="display: flex; justify-content: center;">
+                      <div class="course-img img-colaborador border-gris-col-1 margin-bottom-10" style="max-width: 150px;">
+                        <img src="images/galeria/sonia-ramirez.png" class="" alt="">
+                      </div>                
+                    </div>
+                    <div class="texto-perfil">
+                      <div>
+                        <p class="text-center colaborador-nombre">
+
+                          <span class="roboto-700 f-gris-66 f-s-21">
+                            Sonia Ramírez
+                          </span>
+                          <br>
+                          <span class="roboto-400 f-gris-66 f-s-17 line-height-1-1">
+                            Consultoría Gubernamental
+                          </span>
+                        </p>
+
+                        <p class="text-center texto-colaborador">
+                          <span class="roboto-400 f-gris-66 f-s-14 text-justify">
+                             Integrante del equipo de consultoría gubernamental, cuenta con la experiencia en contabilidad municipal, trámites y acompañamiento en las responsabilidades de los municipios. Da seguimiento y visita a las autoridades municipales para medir el avance y los resultados de nuestra consultoría.
+                          </span>
+                        </p>
+                        <ul class="list-inline list-inline-reset texto-colaborador div-social-colaborador">
+                          <li class="padding-right-5 padding-left-5">
+                            <a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-phone" href="tel:951 205 17 04"></a>
+                          </li>
+                          <li class="padding-right-5 padding-left-5">
+                            <a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-whatsapp" href="https://api.whatsapp.com/send?phone=5219516561556" target="_black"></a>
+                          </li>
+                          <li class="padding-right-5 padding-left-5">
+                            <a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-envelope" href="mailto:sonia.rmz@mrcorporativo.com"></a>
+                          </li>
+                          <li class="padding-right-5 padding-left-5">
+                            <a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-linkedin" href="https://www.linkedin.com/in/sonia-ram%C3%ADrez-l%C3%B3pez-657b1116b/" target="_black"></a>
+                          </li>
+                        </ul>
+                      </div>
+                      
+                    </div> 
+                  </div>
+                </div>
+
+                <div class="item img-colab">
+                  <div class="colaboradores-nosotros">
+                    <div class="course margin-bottom-10" style="display: flex; justify-content: center;">
+                      <div class="course-img img-colaborador border-gris-col-1 margin-bottom-10" style="max-width: 150px;">
+                        <img src="images/galeria/ruben-vasquez.png" class="" alt="">
+                      </div>                
+                    </div>
+                    <div class="texto-perfil">
+                      <div>
+                        <p class="text-center colaborador-nombre">
+
+                          <span class="roboto-700 f-gris-66 f-s-21">
+                            Rubén Vásquez
+                          </span>
+                          <br>
+                          <span class="roboto-400 f-gris-66 f-s-17 line-height-1-1">
+                            Consultoría Gubernamental
+                          </span>
+                        </p>
+
+                        <p class="text-center texto-colaborador">
+                          <span class="roboto-400 f-gris-66 f-s-14 text-justify">
+                             Contador Público experto en elaboración de estados financieros, presupuestos y rendición de cuentas, tiene una amplia experiencia en la asesoría y solución a problemas del sector público, la cual sabe comunicar con profesionalismo y disponibilidad a las autoridades correspondientes.
+                          </span>
+                        </p>
+                        <ul class="list-inline list-inline-reset texto-colaborador div-social-colaborador">
+                          <li class="padding-right-5 padding-left-5">
+                            <a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-phone" href="tel:951 205 17 04"></a>
+                          </li>
+                          <li class="padding-right-5 padding-left-5">
+                            <a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-whatsapp" href="https://api.whatsapp.com/send?phone=5219516561556" target="_black"></a>
+                          </li>
+                          <li class="padding-right-5 padding-left-5">
+                            <a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-envelope" href="mailto:ruben.vasquez@mrcorporativo.com"></a>
+                          </li>
+                          <li class="padding-right-5 padding-left-5">
+                            <a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-linkedin" href="https://www.linkedin.com/in/rub%C3%A9n-v%C3%A1squez-hern%C3%A1ndez-25724b171/" target="_black"></a>
+                          </li>
+                        </ul>
+                      </div>
+                      
+                    </div> 
+                  </div>
+                </div>
+
+                <div class="item img-colab">
+                  <div class="colaboradores-nosotros">
+                    <div class="course margin-bottom-10" style="display: flex; justify-content: center;">
+                      <div class="course-img img-colaborador border-gris-col-1 margin-bottom-10" style="max-width: 150px;">
+                        <img src="images/galeria/delia-ramirez.png" class="" alt="">
+                      </div>                
+                    </div>
+                    <div class="texto-perfil">
+                      <div>
+                        <p class="text-center colaborador-nombre">
+
+                          <span class="roboto-700 f-gris-66 f-s-21">
+                            Delia Ramírez
+                          </span>
+                          <br>
+                          <span class="roboto-400 f-gris-66 f-s-17 line-height-1-1">
+                            Consultoría Gubernamental
+                          </span>
+                        </p>
+
+                        <p class="text-center texto-colaborador">
+                          <span class="roboto-400 f-gris-66 f-s-14 text-justify">
+                             Egresada como contadora pública, ha desarrollado su campo profesional en la Consultoría Gubernamental que ofrece CMR Consultores. Su principal función es presentar datos e información financiera en los diferentes sistemas y apoyar en la asistencia técnica de los procesos de contabilidad de los municipios clientes.
+                          </span>
+                        </p>
+                        <ul class="list-inline list-inline-reset texto-colaborador div-social-colaborador">
+                          <li class="padding-right-5 padding-left-5">
+                            <a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-phone" href="tel:951 205 17 04"></a>
+                          </li>
+                          <li class="padding-right-5 padding-left-5">
+                            <a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-whatsapp" href="https://api.whatsapp.com/send?phone=5219516561556" target="_black"></a>
+                          </li>
+                          <li class="padding-right-5 padding-left-5">
+                            <a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-envelope" href="mailto:delia.rmz@mrcorporativo.com"></a>
+                          </li>
+                          <li class="padding-right-5 padding-left-5">
+                            <a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-linkedin" href="https://www.linkedin.com/in/delia-anah%C3%AD-ram%C3%ADrez-mariano-9057b6170/" target="_black"></a>
+                          </li>
+                        </ul>
+                      </div>
+                      
+                    </div> 
+                  </div>
+                </div>
+
+                <div class="item img-colab">
+                  <div class="colaboradores-nosotros">
+                    <div class="course margin-bottom-10" style="display: flex; justify-content: center;">
+                      <div class="course-img img-colaborador border-gris-col-1 margin-bottom-10" style="max-width: 150px;">
+                        <img src="images/galeria/cecilio-martinez.png" class="" alt="">
+                      </div>                
+                    </div>
+                    <div class="texto-perfil">
+                      <div>
+                        <p class="text-center colaborador-nombre">
+
+                          <span class="roboto-700 f-gris-66 f-s-21">
+                            Cecilio Martínez
+                          </span>
+                          <br>
+                          <span class="roboto-400 f-gris-66 f-s-17 line-height-1-1">
+                            Infraestructura Pública
+                          </span>
+                        </p>
+
+                        <p class="text-center texto-colaborador">
+                          <span class="roboto-400 f-gris-66 f-s-14 text-justify">
+                             Ingeniero líder del departamento de infraestructura pública. Gestiona y coordina las diferentes áreas profesionales para la realización de obra pública, desde la gestión hasta la entrega de obra terminada. Ha llevado la supervisión de obra en más de 20 municipios del estado de Oaxaca, logrando el éxito y la confianza de los servidores públicos.   
+                          </span>
+                        </p>
+                        <ul class="list-inline list-inline-reset texto-colaborador div-social-colaborador">
+                          <li class="padding-right-5 padding-left-5">
+                            <a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-phone" href="tel:951 205 17 04"></a>
+                          </li>
+                          <li class="padding-right-5 padding-left-5">
+                            <a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-whatsapp" href="https://api.whatsapp.com/send?phone=5219516561556" target="_black"></a>
+                          </li>
+                          <li class="padding-right-5 padding-left-5">
+                            <a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-envelope" href="mailto:cecilio.mtz@mrcorporativo.com"></a>
+                          </li>
+                          <li class="padding-right-5 padding-left-5">
+                            <a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-linkedin" href="https://www.linkedin.com/in/cecilio-mart%C3%ADnez-ch%C3%A1vez-2018ba120/" target="_black"></a>
+                          </li>
+                        </ul>
+                      </div>
+                      
+                    </div> 
+                  </div>
+                </div>
+
+                <div class="item img-colab">
+                  <div class="colaboradores-nosotros">
+                    <div class="course margin-bottom-10" style="display: flex; justify-content: center;">
+                      <div class="course-img img-colaborador border-gris-col-1 margin-bottom-10" style="max-width: 150px;">
+                        <img src="images/galeria/galindo-fercano.png" class="" alt="">
+                      </div>                
+                    </div>
+                    <div class="texto-perfil">
+                      <div>
+                        <p class="text-center colaborador-nombre">
+
+                          <span class="roboto-700 f-gris-66 f-s-21">
+                            Galindo Fercano
+                          </span>
+                          <br>
+                          <span class="roboto-400 f-gris-66 f-s-17 line-height-1-1">
+                            Creatividad e Innovación
+                          </span>
+                        </p>
+
+                        <p class="text-center texto-colaborador">
+                          <span class="roboto-400 f-gris-66 f-s-14 text-justify">
+                             Encargado del área creativa, proporciona materiales gráficos e ideas innovadoras para posicionar y difundir la imagen de la empresa, en las diferentes plataformas de publicidad, de forma interna y externa de la Firma.
+                          </span>
+                        </p>
+                        <ul class="list-inline list-inline-reset texto-colaborador div-social-colaborador">
+                          <li class="padding-right-5 padding-left-5">
+                            <a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-phone" href="tel:951 205 17 04"></a>
+                          </li>
+                          <li class="padding-right-5 padding-left-5">
+                            <a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-whatsapp" href="https://api.whatsapp.com/send?phone=5219516561556" target="_black"></a>
+                          </li>
+                          <li class="padding-right-5 padding-left-5">
+                            <a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-envelope" href="mailto:david.fercano@mrcorporativo.com"></a>
+                          </li>
+                          <li class="padding-right-5 padding-left-5">
+                            <a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-linkedin" href="https://www.linkedin.com/in/david-fercano-cmrconsultores/" target="_black"></a>
+                          </li>
+                        </ul>
+                      </div>
+                      
+                    </div> 
+                  </div>
+                </div>
+
+                <div class="item img-colab">
+                  <div class="colaboradores-nosotros">
+                    <div class="course margin-bottom-10" style="display: flex; justify-content: center;">
+                      <div class="course-img img-colaborador border-gris-col-1 margin-bottom-10" style="max-width: 150px;">
+                        <img src="images/galeria/nayeli-melchor.png" class="" alt="">
+                      </div>                
+                    </div>
+                    <div class="texto-perfil">
+                      <div>
+                        <p class="text-center colaborador-nombre">
+
+                          <span class="roboto-700 f-gris-66 f-s-21">
+                            Nayeli Melchor
+                          </span>
+                          <br>
+                          <span class="roboto-400 f-gris-66 f-s-17 line-height-1-1">
+                            Asistencia Ejecutiva
+                          </span>
+                        </p>
+
+                        <p class="text-center texto-colaborador">
+                          <span class="roboto-400 f-gris-66 f-s-14 text-justify">
+                             Auxiliar de dirección. Solventa recursos, planifica reuniones y actividades necesarios para los diferentes departamentos operativos. Con lenguaje claro y actitud profesional opera el puesto de recepcionista.
+                          </span>
+                        </p>
+                        <ul class="list-inline list-inline-reset texto-colaborador div-social-colaborador">
+                          <li class="padding-right-5 padding-left-5">
+                            <a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-phone" href="tel:951 205 17 04"></a>
+                          </li>
+                          <li class="padding-right-5 padding-left-5">
+                            <a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-whatsapp" href="https://api.whatsapp.com/send?phone=5219516561556" target="_black"></a>
+                          </li>
+                          <li class="padding-right-5 padding-left-5">
+                            <a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-envelope" href="mailto:nayeli.melchor@mrcorporativo.com"></a>
+                          </li>
+                          <li class="padding-right-5 padding-left-5">
+                            <a class="novi-icon icon icon-circle icon-bright-gray-filled icon-xxs-smaller fa fa-linkedin" href="https://www.linkedin.com/in/nayeli-jazm%C3%ADn-melchor-sibaja-122882170/" target="_black"></a>
                           </li>
                         </ul>
                       </div>
@@ -1065,13 +1256,14 @@
 	<script src="js/main.js"></script>
 
 	<script src="js/core.min.js"></script>
+  <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 	<!-- Magnific-popup -->
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/script.js"></script>
     <script type="text/javascript">
-      $(".texto-enlace-1").on("click", function(){
-        if($(".div-50-alcance-1").hasClass("width-50")){
-          $(".div-50-alcance-1").removeClass("width-50");
+      $(".div-50-alcance-1").on("click", function(){
+        if($(this).hasClass("width-50")){
+          $(this).removeClass("width-50");
            $( ".flechas-enlace" ).animate({
               opacity: 1
             }, {
@@ -1099,7 +1291,7 @@
             });
 
         }else {
-          $(".div-50-alcance-1").addClass("width-50");
+          $(this).addClass("width-50");
           
             $( ".flechas-enlace-derecha" ).animate({
               opacity: 1
@@ -1128,14 +1320,39 @@
             
         }
       });
-      /*$(".div-texto-valor").hover(
-        function(){
-          $(this).parent().addClass("centrar-flex");
-        },
-        function(){
-          $(this).parent().removeClass("centrar-flex");
+
+      $(window).scroll(function() {
+        console.log(document.activeElement.name);
+      });
+
+      function callback(entries,observer){
+        if(entries[0].isIntersecting){//verificamos si actualmente es visible
+          $(".barra-grafica > div").addClass("animacion-grafica-barra");
+          $(".texto-grafica > p").addClass("animacion-texto-1");
+        }else{
+          $(".barra-grafica > div").removeClass("animacion-grafica-barra");
+          $(".texto-grafica > p").removeClass("animacion-texto-1");
         }
-        );*/
+      }
+      var observer = new IntersectionObserver(callback, {});
+
+      const element = document.querySelector('.div-animar-grafica');
+      observer.observe(element);
+
+
+      (function($){
+        $(window).on("load",function(){
+            
+            $.mCustomScrollbar.defaults.scrollButtons.enable=true; //enable scrolling buttons by default
+            $.mCustomScrollbar.defaults.axis="yx"; //enable 2 axis scrollbars by default
+            
+            $(".fila-texto-enlace").mCustomScrollbar({theme:"rounded-dark"});
+            
+            
+            
+            
+          });
+        })(jQuery);
     </script>
   </body>
 </html>

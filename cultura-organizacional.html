@@ -354,7 +354,7 @@
       </section>
 
 
-      <section class="section-50 section-md-75 section-lg-100 sec3 padding-top-50">
+      <section class="section-50 section-md-75 section-lg-100 sec3 padding-top-50 seccion-vd">
         <div class="">
           <div class="container">
             <h2 class="color-font-azul-2  text-center padding-botton-30">
@@ -685,6 +685,9 @@
 
                     </div>
                     <div class="text-center div-texto-valor">
+                      <div class="text-valor-hover">
+                        
+                      </div>
                       <div class="text-valores-div">
                         <span class="text-white roboto-700 texto-valor-label">Lealtad</span>
                         <hr class="margin-right-33p margin-left-33p b-blanco-fff">
@@ -712,6 +715,9 @@
 
                     </div>
                     <div class="text-center div-texto-valor">
+                      <div class="text-valor-hover">
+                        
+                      </div>
                       <div class="text-valores-div">
                         <span class="text-white roboto-700 texto-valor-label">Integridad</span>
                         <hr class="margin-right-33p margin-left-33p b-blanco-fff">
@@ -739,6 +745,9 @@
 
                     </div>
                     <div class="text-center div-texto-valor">
+                      <div class="text-valor-hover">
+                        
+                      </div>
                       <div class="text-valores-div">
                         <span class="text-white roboto-700 texto-valor-label">Respeto</span>
                         <hr class="margin-right-33p margin-left-33p b-blanco-fff">
@@ -766,6 +775,9 @@
 
                     </div>
                     <div class="text-center div-texto-valor">
+                      <div class="text-valor-hover">
+                        
+                      </div>
                       <div class="text-valores-div">
                         <span class="text-white roboto-700 texto-valor-label">Pasión</span>
                         <hr class="margin-right-33p margin-left-33p b-blanco-fff">
@@ -1230,6 +1242,97 @@
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/script.js"></script>
     <script type="text/javascript">
+      /*$(".right-1 div").on("click", function(){
+        $(".card-1").removeClass("card-1-hover");
+        $(".card-1").addClass("card-2");*/
+        
+        /*if($(this).hasClass("card-1-hover")){
+          $(this).removeClass("card-1-hover"); 
+          entro_hover = 0;
+        }
+        else {
+          entro_hover = 1;
+          $(this).addClass("card-1-hover"); 
+        }*/
+      //});
+
+      $('.card-1').on('mouseover', function () {
+          $(this).addClass("card-1-hover");         
+      });
+
+      $('.card-1').on('mouseout', function () {
+          $(this).removeClass("card-1-hover");         
+      });
+      var entro = 0;
+
+      $('.card-1').on('click', function () {
+        console.log("hola-1");
+        if(entro == 1){
+          entro = 0;
+        }
+        else {
+          $(this).addClass("card-1-hover"); 
+        }
+      });
+
+      $('.right-1 div').on('click', function () {
+          entro = 1;
+          $(".card-1").removeClass("card-1-hover");
+      });
+
+
+
+
+      $('.div-texto-valor').on('mouseover', function () {
+          $(this).addClass("div-texto-valor-hover");       
+      });
+
+      $('.div-texto-valor').on('mouseout', function () {
+          $(this).removeClass("div-texto-valor-hover"); 
+          $(".text-valor-hover").removeClass("height-100");        
+      });
+      var entro_valores = 0;
+
+      $('.div-texto-valor').on('click', function () {
+        console.log("hola");
+        if(entro_valores == 1){
+          entro_valores = 0;
+        }
+        else {
+          $(this).addClass("div-texto-valor-hover"); 
+          $(this.childNodes[1]).addClass("height-100");
+          /*$(this.childNodes[1]).addClass("height-100");*/
+        }        
+      });
+
+      $('.text-valor-hover').on('click', function () {
+          entro_valores = 1;
+          $('.div-texto-valor').removeClass("div-texto-valor-hover");
+          $(this).removeClass("height-100");
+      });
+
+
+
+      /*$(".card-2").on("click", function(){
+        if($(this).hasClass("card-1-hover")){
+          $(this).removeClass("card-1-hover"); 
+        }
+        else {
+          $(this).addClass("card-1-hover"); 
+        }
+      });
+      $(".card-1").hover(
+        function(){
+          console.log("hola mundo");
+          entro_hover = "right";
+          $(this).addClass("card-1-hover");
+        },
+        function(){
+          entro_hover = "left";
+          $(this).removeClass("card-1-hover");
+        }
+      );*/
+
       /*$(".div-texto-valor").hover(
         function(){
           $(this).parent().addClass("centrar-flex");

@@ -32,7 +32,8 @@ echo "<script>alert('Los campos marcados con * son obligatorios');location.href 
 
     $mail->From     = $Email;
     $mail->FromName = $Nombre; 
-    $mail->AddAddress("ruben.tirado@mrcorporativo.com"); // Dirección a la que llegaran los mensajes.
+    $mail->AddAddress("contacto@mrcorporativo.com"); // Dirección a la que llegaran los mensajes.
+    $mail->AddAddress("marcelo.mtz@mrcorporativo.com"); // Dirección a la que llegaran los mensajes.
    
 // Aquí van los datos que apareceran en el correo que reciba
     //adjuntamos un archivo 
@@ -44,9 +45,9 @@ echo "<script>alert('Los campos marcados con * son obligatorios');location.href 
     $mail->Body     =  "<b>Una persona contacto por medio de la Página Web de CMR Consultores al área $Area</b><br><br>".
     "Nombre: <b>$Nombre $Apellidos </b>\n<br>". 
     "Ciudad: <b>$Ciudad</b> \n<br>".
-    "Email: <b>$Email</b> \n<br>".
-    "Telefono: <b>$Telefono</b> \n\n\n<br>".
-    "Empresa: <b>$Empresa</b> \n\n\n<br>".
+    "E-mail: <b>$Email</b> \n<br>".
+    "Teléfono: <b>$Telefono</b> \n<br>".
+    "Empresa: <b>$Empresa</b> \n<br>".
     "Servicio Solicitado: <b>$Area</b> \n\n\n<br><br>".
     "Deja el siguiente mensaje: <b>$Mensaje</b> \n\n\n<br><br><br>";
 

@@ -31,7 +31,8 @@ echo "<script>alert('Los campos marcados con * son obligatorios');location.href 
 
     $mail->From     = "tirado1294@gmail.com";
     $mail->FromName = $Nombre; 
-    $mail->AddAddress("ruben.tirado@mrcorporativo.com"); // Dirección a la que llegaran los mensajes.
+    $mail->AddAddress("contacto@mrcorporativo.com"); // Dirección a la que llegaran los mensajes.
+    $mail->AddAddress("cecilio.mtz@mrcorporativo.com"); // Dirección a la que llegaran los mensajes.
    
 // Aquí van los datos que apareceran en el correo que reciba
     //adjuntamos un archivo 
@@ -39,8 +40,8 @@ echo "<script>alert('Los campos marcados con * son obligatorios');location.href 
             
     $mail->WordWrap = 50; 
     $mail->IsHTML(true);     
-    $mail->Subject  =  "Vacante Auxiliar Contable";
-    $mail->Body     =  "<b>Curriculum Vitae para vacante de axiliar contable</b><br><br>".
+    $mail->Subject  =  "Vacante $Carrera";
+    $mail->Body     =  "<b>Curriculum Vitae para vacante de $Carrera</b><br><br>".
     "Nombre: <b>$Nombre $Apellidos </b>\n<br>". 
     "Edad: <b>$Edad años</b> \n<br>".
     "Teléfono: <b>$Telefono</b> \n<br>".
@@ -55,10 +56,10 @@ echo "<script>alert('Los campos marcados con * son obligatorios');location.href 
 // Datos del servidor SMTP
 
     $mail->IsSMTP(); 
-    $mail->Host = "ssl://mail.mrcorporativo.com:465";  // Servidor de Salida.
+    $mail->Host = "ssl://smtp.gmail.com:465"; // GMail
     $mail->SMTPAuth = true; 
-    $mail->Username = "ruben.tirado@mrcorporativo.com";  // Correo Electrónico
-    $mail->Password = "tirado1294"; // Contraseña
+    $mail->Username = "enviocorreoscmr@gmail.com";  // Correo Electrónico
+    $mail->Password = "cmr_envio_2020"; // Contraseña
 
     // Activo condificacción utf-8
     $mail->CharSet = 'UTF-8';

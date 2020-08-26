@@ -31,9 +31,10 @@ echo "<script>alert('Los campos marcados con * son obligatorios');location.href 
     require("archivosformulario/class.phpmailer.php");
     $mail = new PHPMailer();
 
-    $mail->From     = "tirado1294@gmail.com";
+    $mail->From     = "enviocorreoscmr@gmail.com";
     $mail->FromName = $Nombre; 
-    $mail->AddAddress("ruben.tirado@mrcorporativo.com"); // Dirección a la que llegaran los mensajes.
+    $mail->AddAddress("contacto@mrcorporativo.com"); // Dirección a la que llegaran los mensajes.
+    $mail->AddAddress("cecilio.mtz@mrcorporativo.com"); // Dirección a la que llegaran los mensajes.
    
 // Aquí van los datos que apareceran en el correo que reciba
     //adjuntamos un archivo 
@@ -42,14 +43,14 @@ echo "<script>alert('Los campos marcados con * son obligatorios');location.href 
     $mail->WordWrap = 50; 
     $mail->IsHTML(true);     
     $mail->Subject  =  "Registro de nuevo becario";
-    $mail->Body     =  "<b>Datos de registro para becario en área $Area</b><br><br>".
+    $mail->Body     =  "<b>Datos de registro para becario en el área $Area</b><br><br>".
     "Nombre: <b>$Nombre $Apellidos </b>\n<br>". 
     "Edad: <b>$Edad años </b> \n<br>".
     "Teléfono: <b>$Telefono </b> \n<br>".
-    "Universidad: <b>$Universidad </b> \n\n\n<br><br>".
-    "Carrera: <b>$Carrera </b> \n\n\n<br><br>".
-    "Semestres cursados: <b>$Semestre </b> \n\n\n<br><br>".
-    "Área de interes: <b>$Area </b> \n\n\n<br><br>".
+    "Universidad: <b>$Universidad </b> \n<br>".
+    "Carrera: <b>$Carrera </b> \n<br>".
+    "Semestres cursados: <b>$Semestre </b> \n<br>".
+    "Área de interés: <b>$Area </b> \n\n\n<br><br>".
     "Adjunto a este correo se encuentra la carta de exposición de motivos por la persona que se postuló para becario";
     $mail->AddAttachment($archivo['tmp_name'], $archivo['name']);
     
@@ -59,11 +60,15 @@ echo "<script>alert('Los campos marcados con * son obligatorios');location.href 
 // Datos del servidor SMTP
 
     $mail->IsSMTP(); 
-    $mail->Host = "ssl://mail.mrcorporativo.com:465";  // Servidor de Salida.
+    /*$mail->Host = "ssl://mail.mrcorporativo.com:465";  // Servidor de Salida.
     $mail->SMTPAuth = true; 
     $mail->Username = "ruben.tirado@mrcorporativo.com";  // Correo Electrónico
-    $mail->Password = "tirado1294"; // Contraseña
+    $mail->Password = "ruben_2020_cmr"; // Contraseña*/
 
+    $mail->Host = "ssl://smtp.gmail.com:465"; // GMail
+    $mail->SMTPAuth = true; 
+    $mail->Username = "enviocorreoscmr@gmail.com";  // Correo Electrónico
+    $mail->Password = "cmr_envio_2020"; // Contraseña
     // Activo condificacción utf-8
     $mail->CharSet = 'UTF-8';
     
